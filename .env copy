@@ -1,0 +1,9 @@
+MONGO_URL="MONGO URL"
+
+JWT_SECRET= "knibnaeiutniubntiuaninrijk"
+
+EMAIL="___YOUR EMAIL__"
+
+PASSWORD="__APP PASSWORD__"
+
+VERIFICATION_LINK="(__URL__)/verify-email/"
