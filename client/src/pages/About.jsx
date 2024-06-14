@@ -1,7 +1,7 @@
 import{Card} from"flowbite-react";
 const About = () => {
   return (
-    <div className="bg-blue-100 flex justify-center pb-8 w-full" id="about">
+    <div className="bg-blue-100 flex justify-center p-2 pb-8 w-full" id="about">
       <div className="w-full">
         <h1 className="text-3xl font-bold text-blue-900 text-center mb-8">
           About Us

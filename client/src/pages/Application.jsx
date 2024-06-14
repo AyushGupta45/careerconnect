@@ -124,7 +124,7 @@ const Application = () => {
   };
 
   return (
-    <div id="seminar">
+    <div id="seminar" className="p-2">
       <h1 className="text-4xl mb-4 font-bold text-blue-900 text-center my-4">
         Apply for Upcoming Seminar's and Placements drives
       </h1>

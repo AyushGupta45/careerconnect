@@ -21,12 +21,30 @@ const PastDrives = () => {
             <img
               src={drive.image}
               alt={drive.seminarName}
-              className="w-full h-full object-cover rounded-lg shadow-md"
+              className="w-full h-full object-cover rounded-t-lg shadow-md"
             />
-            <div className="absolute bottom-0 left-0 w-full">
+            {/* <div className="absolute hidden md:block bottom-0 left-0 w-full">
               <div className="bg-gradient-to-b from-gray-500 via-gray-700 to-gray-900 text-white p-4 rounded-tl-lg">
-                <h2 className="text-3xl font-bold mb-2">{drive.seminarName}</h2>
-                <p className="text-sm mb-2">{drive.jobDescription}</p>
+                <h2 className="text-xl md:text-3xl font-bold mb-2">
+                  {drive.seminarName}
+                </h2>
+                <p className="text-xs md:text-sm mb-2">
+                  {drive.jobDescription}
+                </p>
+                <a
+                  href={drive.documentLink}
+                  className="text-blue-500 hover:underline"
+                >
+                  View Document
+                </a>
+              </div>
+            </div> */}
+            <div className="w-full">
+              <div className="bg-gradient-to-b from-gray-500 via-gray-700 to-gray-900 text-white p-4">
+                <h2 className="text-xl md:text-3xl font-bold mb-2">
+                  {drive.seminarName}
+                </h2>
+                <p className="text-xs md:text-sm mb-2">{drive.jobDescription}</p>
                 <a
                   href={drive.documentLink}
                   className="text-blue-500 hover:underline"

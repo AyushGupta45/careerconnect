@@ -3,52 +3,14 @@ import {
   FaUsers,
   FaFileAlt,
   FaMicrophone,
-  FaPen,
   FaComments,
-  FaCheck,
   FaHandshake,
-  FaShieldAlt,
-  FaSearch,
-  FaFilePowerpoint,
-  FaChalkboardTeacher,
-  FaFlask,
-  FaBolt,
-  FaMicroscope,
-  FaBuilding,
-  FaCalculator,
-  FaAtom,
-  FaCode,
-  FaFileInvoiceDollar,
-  FaBalanceScale,
-  FaChartLine,
-  FaMoneyBillWave,
-  FaUserTie,
-  FaRegClock,
-  FaUserAlt,
-  FaMoneyBillAlt,
-  FaToolbox,
-  FaUserCheck,
   FaGraduationCap,
-  FaClipboardCheck,
-  FaClipboardList,
-  FaBookOpen,
   FaTasks,
-  FaEdit,
   FaBook,
   FaQuestionCircle,
   FaUserGraduate,
-  FaHandsHelping,
-  FaLightbulb,
-  FaBriefcase,
-  FaGlobe,
 } from "react-icons/fa";
-
-import {
-  AiOutlineCheckCircle,
-  AiOutlineClockCircle,
-  AiOutlineLock,
-  AiOutlineEdit,
-} from "react-icons/ai";
 
 export const cardData = [
   {
@@ -146,18 +108,6 @@ export const faqs = [
 
 export const experts = [
   {
-    name: "Johnathan Doe",
-    degree: "PhD in Computer Science and Engineering",
-    stars: 5,
-    specialization: [
-      "Software Engineering",
-      "Data Science",
-      "Machine Learning",
-    ],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
-  },
-  {
     name: "Jane A. Smith",
     degree: "Master's in Cybersecurity and Information Assurance",
     stars: 4,
@@ -166,17 +116,27 @@ export const experts = [
       "Network Security",
       "Information Security",
     ],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
+    uploadLink: "/assets/users/user1.jpg",
   },
   {
     name: "Robert L. Johnson",
     degree: "PhD in Artificial Intelligence and Robotics",
     stars: 5,
     specialization: ["Artificial Intelligence", "Machine Learning", "Robotics"],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
+    uploadLink: "/assets/users/user2.jpg",
   },
+  {
+    name: "Johnathan Doe",
+    degree: "PhD in Computer Science and Engineering",
+    stars: 5,
+    specialization: [
+      "Software Engineering",
+      "Data Science",
+      "Machine Learning",
+    ],
+    uploadLink: "/assets/users/user3.jpg",
+  },
+
   {
     name: "Julia M. Davis",
     degree: "Master's in Web Development and Design",
@@ -186,16 +146,14 @@ export const experts = [
       "Backend Development",
       "Web Design",
     ],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
+    uploadLink: "/assets/users/user4.jpg",
   },
   {
     name: "Charlie B. Brown",
     degree: "PhD in Data Science and Analytics",
     stars: 5,
     specialization: ["Data Science", "Machine Learning", "Big Data Analytics"],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
+    uploadLink: "/assets/users/user5.jpg",
   },
   {
     name: "Emily R. Clark",
@@ -206,16 +164,14 @@ export const experts = [
       "Web Development",
       "Application Development",
     ],
-    uploadLink:
-      "https://img.freepik.com/free-vector/isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.jpg?w=740&t=st=1718179772~exp=1718180372~hmac=508777816ba28208598c2397f0a7219c01b4bec31cdb962d1c28eed05feb576e",
+    uploadLink: "/assets/users/user6.jpg",
   },
 ];
 
 export const pastDrives = [
   {
     seminarName: "Web Development Seminar",
-    image:
-      "https://www.shutterstock.com/image-photo/speaker-giving-talk-conference-hall-260nw-1117902230.jpg",
+    image: "/assets/drives/past-drive1.jpg",
     companyName: "Tech Academy",
     jobDescription:
       "Learn the latest web development technologies and frameworks such as React, Angular, and Vue.js. Gain practical skills in building modern web applications.",
@@ -223,8 +179,7 @@ export const pastDrives = [
   },
   {
     seminarName: "Artificial Intelligence and Machine Learning Workshop",
-    image:
-      "https://www.shutterstock.com/image-photo/speaker-giving-talk-conference-hall-260nw-1117902230.jpg",
+    image: "/assets/drives/past-drive2.jpg",
     companyName: "AI Labs",
     jobDescription:
       "Explore the fascinating world of artificial intelligence and machine learning. Get hands-on experience with algorithms, neural networks, and deep learning models.",
@@ -232,8 +187,7 @@ export const pastDrives = [
   },
   {
     seminarName: "Digital Marketing Bootcamp",
-    image:
-      "https://www.shutterstock.com/image-photo/speaker-giving-talk-conference-hall-260nw-1117902230.jpg",
+    image: "/assets/drives/past-drive3.jpg",
     companyName: "Digital Strategies Inc.",
     jobDescription:
       "Master the fundamentals of digital marketing, including SEO, SEM, social media marketing, and email marketing. Learn strategies to boost online presence and drive business growth.",
@@ -242,8 +196,7 @@ export const pastDrives = [
   },
   {
     seminarName: "Cybersecurity Conference",
-    image:
-      "https://www.shutterstock.com/image-photo/speaker-giving-talk-conference-hall-260nw-1117902230.jpg",
+    image: "/assets/drives/past-drive4.jpg",
     companyName: "SecureTech",
     jobDescription:
       "Stay updated on the latest trends and best practices in cybersecurity. Explore topics such as network security, ethical hacking, data protection, and risk management.",
@@ -252,8 +205,7 @@ export const pastDrives = [
   },
   {
     seminarName: "Data Science Symposium",
-    image:
-      "https://www.shutterstock.com/image-photo/speaker-giving-talk-conference-hall-260nw-1117902230.jpg",
+    image: "/assets/drives/past-drive5.jpg",
     companyName: "Data Insights Institute",
     jobDescription:
       "Discover the power of data science and analytics in solving real-world problems. Learn data visualization, statistical analysis, machine learning algorithms, and more.",
@@ -264,7 +216,7 @@ export const pastDrives = [
 export const seminars = [
   {
     name: "Machine Learning Fundamentals",
-    posterImage: "/assets/ml.jpeg",
+    posterImage: "/assets/seminars/ml.jpeg",
     date: "2024-07-15",
     location: "Online",
     description:
@@ -274,7 +226,7 @@ export const seminars = [
   },
   {
     name: "Web Development Trends",
-    posterImage: "/assets/wd.jpeg",
+    posterImage: "/assets/seminars/wd.jpeg",
     date: "2024-08-10",
     location: "College Seminar Hall",
     description:
@@ -284,7 +236,7 @@ export const seminars = [
   },
   {
     name: "Digital Marketing Strategies",
-    posterImage: "/assets/dm.jpg",
+    posterImage: "/assets/seminars/dm.jpg",
     date: "2024-09-05",
     location: "Online",
     description:
@@ -294,7 +246,7 @@ export const seminars = [
   },
   {
     name: "Blockchain Technology Overview",
-    posterImage: "/assets/bc.jpg",
+    posterImage: "/assets/seminars/bc.jpg",
     date: "2024-10-01",
     location: "College Seminar Hall",
     description:
@@ -304,7 +256,7 @@ export const seminars = [
   },
   {
     name: "Artificial Intelligence Applications",
-    posterImage: "/assets/ai.jpg",
+    posterImage: "/assets/seminars/ai.jpg",
     date: "2024-11-20",
     location: "Online",
     description:

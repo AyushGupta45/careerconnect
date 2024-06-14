@@ -16,8 +16,8 @@ const Cards = () => {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-col items-center gap-y-4">
+    <div className="p-2">
+      <div className="flex flex-col items-center">
         <h1 className="text-4xl font-bold text-blue-900 text-center">
           Unlock Your Career Potential with Our Platform
         </h1>

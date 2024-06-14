@@ -47,7 +47,7 @@ export const headerTheme = {
 
 export const carousel = {
   root: {
-    base: "relative h-full w-full mx-auto select-none",
+    base: "relative h-full w-full md:w-[90%] mx-auto select-none",
     leftControl:
       "absolute left-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
     rightControl:

@@ -78,7 +78,7 @@ const Experts = () => {
                   <img
                     src={expert.uploadLink || "https://via.placeholder.com/150"}
                     alt={expert.name}
-                    className="w-full h-40 object-cover rounded-t-lg mb-2"
+                    className="w-full h-44 object-cover rounded-t-lg mb-2"
                   />
 
                   <div className="font-bold text-xl mb-2">{expert.name}</div>
