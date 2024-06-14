@@ -38,12 +38,12 @@ const Seminars = () => {
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full relative">
           <FaArrowLeft
-            className="absolute top-1/2 -left-16 transform -translate-y-1/2 cursor-pointer text-gray-600 hover:text-gray-900"
+            className="absolute top-1/2 -left-16 hidden md:block transform -translate-y-1/2 cursor-pointer text-gray-600 hover:text-gray-900"
             size={30}
             onClick={goToPrevious}
           />
           <FaArrowRight
-            className="absolute top-1/2 -right-16 transform -translate-y-1/2 cursor-pointer text-gray-600 hover:text-gray-900"
+            className="absolute top-1/2 -right-16 hidden md:block transform -translate-y-1/2 cursor-pointer text-gray-600 hover:text-gray-900"
             size={30}
             onClick={goToNext}
           />

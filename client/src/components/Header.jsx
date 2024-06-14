@@ -57,7 +57,7 @@ const Header = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <FaGraduationCap size={40} className="text-blue-800" />
-          <p className="text-lg text-blue-800">CareerConnect</p>
+          <p className="text-lg hidden md:block text-blue-800">CareerConnect</p>
         </Link>
 
         <div className="flex gap-4 lg:order-2 items-center">
