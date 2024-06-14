@@ -1,6 +1,6 @@
 # Seminar Application Platform
 
-[Live Demo](https://careerconnect-vqgu.onrender.com/)
+[Live Demo](https://careerconnect-ir9f.onrender.com/)
 
 This is a MERN stack project with both frontend and backend components, providing a complete authentication system including Google authentication using Firebase. Users can apply for seminars, upload their CVs, and manage their profiles through a comprehensive dashboard. The application is fully responsive and includes several features and pages to enhance user experience.
 
