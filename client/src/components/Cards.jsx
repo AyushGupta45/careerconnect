@@ -21,10 +21,8 @@ const Cards = () => {
           Unlock Your Career Potential with Us
         </h1>
         <p className="text-white text-start mb-8">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-          molestiae at iure obcaecati perspiciatis debitis magnam ipsum quia
-          voluptas aspernatur voluptate possimus architecto, error corrupti
-          necessitatibus cumque quam reprehenderit velit.
+          Discover premier opportunities perfectly aligned with your academic
+          goals
         </p>
       </div>
 
