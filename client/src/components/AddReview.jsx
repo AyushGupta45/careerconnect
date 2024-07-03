@@ -38,18 +38,14 @@ const AddReview = () => {
 
   return (
     <>
-      <h2 className="text-3xl font-bold text-blue-900 mb-4 text-center">
+      <h2 className="text-5xl text-center font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
         Add a Review
       </h2>
-      <p className="text-lg text-blue-800 mb-8 text-center">
-        Share your experience with us!
-      </p>
-      <div className="w-11/12 sm:w-9/12 m-auto bg-white py-10 px-5 sm:px-10 rounded-lg shadow-md">
+
+      <div className="w-11/12 sm:w-9/12 m-auto bg-neutral-800 py-10 px-5 sm:px-10 rounded-tr-3xl rounded-bl-3xl shadow-md">
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-4">
             <div className="mb-4 flex justify-center items-center flex-col">
-              <Label htmlFor="star" value="Rating" className="text-lg" />
-              <div className="mb-2"></div>
               <div className="flex gap-x-4">
                 {[1, 2, 3, 4, 5].map((starCount) => (
                   <FaStar
@@ -59,7 +55,7 @@ const AddReview = () => {
                     className={`cursor-pointer ${
                       starCount <= formData.stars
                         ? "text-yellow-300"
-                        : "text-gray-600"
+                        : "text-gray-200"
                     } text-2xl`}
                     onClick={() =>
                       setFormData({ ...formData, stars: starCount })
@@ -69,18 +65,12 @@ const AddReview = () => {
               </div>
             </div>
             <div className="mb-4">
-              <Label
-                htmlFor="description"
-                value="Your Review"
-                className="text-lg"
-              />
-              <div className="mb-2"></div>
               <Textarea
                 type="text"
                 placeholder="Leave a review..."
                 required
                 id="description"
-                className="w-full"
+                className="w-full bg-neutral-700 rounded-tr-3xl rounded-bl-3xl border-neutral-700 border-2 focus:ring-neutral-500 focus:border-neutral-500"
                 rows={5}
                 value={formData.description}
                 onChange={(e) =>
@@ -90,7 +80,7 @@ const AddReview = () => {
             </div>
           </div>
 
-          <Button type="submit" className="mb-4" gradientDuoTone="purpleToPink">
+          <Button type="submit" className="mb-4 text-neutral-200 rounded-none rounded-tr-xl rounded-bl-xl " gradientDuoTone="purpleToPink">
             Add Review
           </Button>
         </form>

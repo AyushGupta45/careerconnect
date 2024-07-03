@@ -29,10 +29,10 @@ const Experts = () => {
 
   return (
     <div className="p-2">
-      <h2 className="text-3xl font-bold text-blue-900 mb-4">
+      <h2 className="text-5xl text-center font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
         Meet Our Mentor Team
       </h2>
-      <p className="text-lg text-blue-800 mb-8">
+      <p className="text-white text-start mb-8">
         Our team of mentors is composed of seasoned professionals from various
         technology domains, each possessing a rich reservoir of knowledge and
         experience. From software engineering to data science, cybersecurity to
@@ -63,13 +63,13 @@ const Experts = () => {
             </div>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full">
             {experts
               .slice(currentIndex, currentIndex + 3)
               .map((expert, index) => (
                 <div
                   key={index}
-                  className={`bg-white m-auto rounded-lg shadow-lg p-6 h-full flex flex-col justify-between items-center text-center w-full ${
+                  className={`bg-neutral-800 hover:bg-neutral-700 border border-[#2a2928] hover:shadow-lg hover:scale-[1.03] hover:duration-150 transition duration-150 ease-in-out max-w-md mx-auto rounded-tr-3xl rounded-bl-3xl p-6 md:p-4 lg:p-0 lg:py-4 shadow-lg h-full flex flex-col items-center text-center w-full ${
                     index >= 1 ? "hidden md:block" : ""
                   } ${index >= 2 ? "hidden lg:block" : ""} ${
                     index === 2 ? "md:hidden" : ""
@@ -78,25 +78,18 @@ const Experts = () => {
                   <img
                     src={expert.uploadLink || "https://via.placeholder.com/150"}
                     alt={expert.name}
-                    className="w-full h-44 object-cover rounded-t-lg mb-2"
+                    className="w-64 h-64 m-auto object-cover rounded-full mb-2"
                   />
 
-                  <div className="font-bold text-xl mb-2">{expert.name}</div>
+                  <div className="font-bold text-white text-xl mb-2">{expert.name}</div>
 
-                  <div className="text-gray-700 text-base mb-2">
+                  <div className="text-gray-300 text-base h-12 mb-2 m-auto w-full lg:w-10/12">
                     {expert.degree}
                   </div>
 
-                  <div className="flex justify-center mb-2 items-center text-yellow-400">
-                    {[...Array(expert.stars || 0)].map((_, index) => (
-                      <FaStar key={index} size={30} />
-                    ))}
-                    {expert.stars === undefined && (
-                      <span>No rating available</span>
-                    )}
-                  </div>
+  
 
-                  <p className="text-gray-700">
+                  <p className="text-gray-400 m-auto w-10/12">
                     <strong>Specialization: </strong>
                     {expert.specialization.join(", ")}
                   </p>

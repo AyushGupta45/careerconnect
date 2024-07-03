@@ -10,7 +10,64 @@ import {
   FaBook,
   FaQuestionCircle,
   FaUserGraduate,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaGithubSquare,
 } from "react-icons/fa";
+
+export const words = [
+  "platform",
+  "streamline",
+  "placement",
+  "opportunities",
+  "centralized",
+  "efficiency",
+];
+
+export const contactInfo = [
+  {
+    icon: FaInstagramSquare,
+    info: "@carreer_connect",
+    link: "https://www.instagram.com/carreer_connect",
+  },
+  {
+    icon: FaLinkedin,
+    info: "Carreer Connect Solutions",
+    link: "https://www.linkedin.com/company/carreer-connect-solutions-private-limited",
+  },
+  {
+    icon: FaMapMarkerAlt,
+    info: "Whitefield, Bangalore",
+  },
+  {
+    icon: FaPhoneAlt,
+    info: "+91 8264019058",
+  },
+  {
+    icon: FaEnvelope,
+    info: "contact@carreerconnect.in",
+  },
+  {
+    icon: FaFacebookSquare,
+    info: "Carreer Connect Facebook",
+    link: "https://www.facebook.com/carreerconnectfb",
+  },
+  {
+    icon: FaTwitterSquare,
+    info: "@carreerconnect_twitter",
+    link: "https://twitter.com/carreerconnect_twitter",
+  },
+  {
+    icon: FaGithubSquare,
+    info: "github.com/carreerconnect",
+    link: "https://github.com/carreerconnect",
+  },
+];
 
 export const cardData = [
   {

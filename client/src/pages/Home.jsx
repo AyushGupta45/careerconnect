@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Cards from "../components/Cards";
 import Reviews from "../components/Reviews";
 import Content from "../components/Content";
@@ -11,8 +11,11 @@ import PastDrives from "./PastDrives";
 
 const Home = () => {
   return (
-    <div className="bg-blue-100">
-      <div className="m-auto text-center w-full sm:w-9/12 sm:px-0">
+    <div
+      className="bg-cover"
+      style={{ backgroundImage: "url('assets/Standee.svg')" }}
+    >
+      <div className="m-auto text-center w-full sm:w-9/12 sm:px-0 z-10">
         <Content />
         <hr className="my-8 border-t border-gray-400" />
         <Application />
@@ -30,6 +33,7 @@ const Home = () => {
         <Faq />
         <hr className="my-8 border-t border-gray-400" />
         <About />
+        <hr className="my-8 border-t border-gray-400" />
       </div>
     </div>
   );

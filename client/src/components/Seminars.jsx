@@ -32,7 +32,7 @@ const Seminars = () => {
       {seminars.length === 0 ? (
         <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col justify-between items-center text-center w-full">
           <div>
-            <p className="text-lg font-semibold text-gray-700">No Seminars</p>
+            <p className="text-lg font-semibold text-white">No Seminars</p>
           </div>
         </div>
       ) : (
@@ -52,13 +52,13 @@ const Seminars = () => {
             .map((seminar, index) => (
               <div
                 key={index}
-                className={`bg-white m-auto rounded-lg shadow-lg p-6 h-full flex flex-col justify-between items-center text-center w-full ${
+                className={`bg-neutral-800 hover:bg-neutral-700 border border-[#2a2928] m-auto rounded-tl-3xl rounded-br-3xl shadow-md hover:shadow-lg p-6 h-full flex flex-col justify-between items-center text-center w-full hover:scale-105 hover:duration-150 transition duration-150 ease-in-out ${
                   index >= 1 ? "hidden md:block" : ""
                 } ${index >= 2 ? "hidden lg:block" : ""} ${
                   index === 2 ? "md:hidden" : ""
                 }`}
               >
-                <div className="font-bold text-xl w-full text-start mb-2">
+                <div className="font-bold text-xl w-full text-start text-white mb-2">
                   {seminar.name}
                 </div>
                 <img
@@ -67,23 +67,23 @@ const Seminars = () => {
                   alt={seminar.name}
                 />
 
-                <div className="text-gray-700 text-start mb-2">
+                <div className="text-white text-start mb-2">
                   {seminar.description}
                 </div>
 
-                <p className="text-gray-700 text-start w-full mb-2">
+                <p className="text-white text-start w-full mb-2">
                   <strong>Speaker: </strong>
                   {seminar.speaker}
                 </p>
-                <p className="text-gray-700 text-start w-full mb-2">
+                <p className="text-white text-start w-full mb-2">
                   <strong>Date: </strong>
                   {seminar.date}
                 </p>
-                <p className="text-gray-700 text-start w-full mb-2">
+                <p className="text-white text-start w-full mb-2">
                   <strong>Location: </strong>
                   {seminar.location}
                 </p>
-                <p className="text-gray-700 text-start w-full mb-2">
+                <p className="text-white text-start w-full mb-2">
                   <strong>Duration: </strong>
                   {seminar.duration}
                 </p>

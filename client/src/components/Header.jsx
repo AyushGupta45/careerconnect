@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <>
       <Navbar
-        className="border-b-2 bg-blue-200 py-4 sticky top-0 left-0 w-full z-50 select-none"
+        className="backdrop-blur-lg py-4 sticky top-0 left-0 w-full z-50 select-none"
         theme={headerTheme}
       >
         <Link
@@ -56,8 +56,8 @@ const Header = () => {
           className="whitespace-nowrap text-sm sm:text-xl font-semibold gap-2 flex items-center justify-center "
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <FaGraduationCap size={40} className="text-blue-800" />
-          <p className="text-lg hidden md:block text-blue-800">CareerConnect</p>
+          <FaGraduationCap size={40} className="text-white" />
+          <p className="text-2xl hidden md:block text-white">CareerConnect</p>
         </Link>
 
         <div className="flex gap-4 lg:order-2 items-center">
@@ -127,27 +127,29 @@ const Header = () => {
                 </Dropdown>
               </div>
             </>
-          ) : (
-            <>
-              <Link to="/sign-in">
-                <Button
-                  gradientDuoTone="purpleToBlue"
-                  outline
-                  className="text-lg font-bold"
-                >
-                  Sign In
-                </Button>
-              </Link>
-              <Link to="/sign-up">
-                <Button
-                  gradientDuoTone="purpleToBlue"
-                  className="text-lg font-bold"
-                >
-                  Sign Up
-                </Button>
-              </Link>
-            </>
-          )}
+          ) : 
+          // (
+          //   <>
+          //     <Link to="/sign-in">
+          //       <Button
+          //         gradientDuoTone="purpleToPink"
+          //         className="text-lg font-bold rounded-lg lg:ml-8"
+          //       >
+          //         Sign In
+          //       </Button>
+          //     </Link>
+          //     <Link to="/sign-up">
+          //       <Button
+          //         gradientDuoTone="purpleToBlue"
+          //         className="text-lg font-bold"
+          //       >
+          //         Sign Up
+          //       </Button>
+          //     </Link>
+          //   </>
+          // )
+          null
+          }
           <Navbar.Toggle />
         </div>
 
@@ -155,7 +157,7 @@ const Header = () => {
           <Navbar.Link
             active={path === "/"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
+         
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <Link to="/">Home</Link>
@@ -164,7 +166,7 @@ const Header = () => {
           <Navbar.Link
             active={path === "/seminar-opportunities"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
+          
             onClick={() => {
               scrollToElement("seminar", 100);
             }}
@@ -175,7 +177,6 @@ const Header = () => {
           <Navbar.Link
             active={path === "/past-drives"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
             onClick={() => {
               scrollToElement("past-drives", 100);
             }}
@@ -186,7 +187,6 @@ const Header = () => {
           <Navbar.Link
             active={path === "/reviews"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
             onClick={() => {
               scrollToElement("reviews", 100);
             }}
@@ -197,7 +197,6 @@ const Header = () => {
           <Navbar.Link
             active={path === "/faqs"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
             onClick={() => {
               scrollToElement("faq", 100);
             }}
@@ -208,7 +207,6 @@ const Header = () => {
           <Navbar.Link
             active={path === "/about"}
             as={"div"}
-            className="font-bold text-md lg:text-lg rounded-lg"
             onClick={() => {
               scrollToElement("about", 120);
             }}

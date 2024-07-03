@@ -1,6 +1,6 @@
 export const headerTheme = {
   root: {
-    base: "bg-white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4",
+    base: "bg-transparent px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4",
     rounded: {
       on: "rounded",
       off: "",
@@ -21,8 +21,8 @@ export const headerTheme = {
     base: "flex items-center",
   },
   collapse: {
-    base: "w-full lg:block lg:w-auto",
-    list: "mt-4 flex flex-col lg:mt-0 lg:flex-row lg:space-x-8 lg:text-sm lg:font-medium",
+    base: "w-full lg:block lg:flex lg:flex-1 lg:w-auto",
+    list: "mt-4 flex flex-col flex-1 lg:mt-0 lg:flex-row lg:justify-end lg:space-x-8 lg:text-sm lg:font-medium",
     hidden: {
       on: "hidden",
       off: "",
@@ -31,8 +31,8 @@ export const headerTheme = {
   link: {
     base: "block py-2 pr-4 pl-3 lg:p-0",
     active: {
-      on: "text-white dark:text-white lg:bg-transparent text-indigo-500",
-      off: "border-gray-100 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:hover:bg-transparent lg:hover:text-cyan-700 lg:dark:hover:bg-transparent lg:dark:hover:text-white",
+      on: "text-white dark:text-white lg:bg-transparent text-white lg:text-lg lg:font-black",
+      off: "border-gray-100 text-gray-300 lg:text-lg text-sm hover:bg-gray-50 rounded-lg hover:text-black dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:hover:bg-transparent lg:hover:text-gray-300 lg:hover:underline lg:dark:hover:bg-transparent lg:dark:hover:text-white",
     },
     disabled: {
       on: "text-gray-400 hover:cursor-not-allowed dark:text-gray-600",
@@ -40,10 +40,11 @@ export const headerTheme = {
     },
   },
   toggle: {
-    base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden",
-    icon: "h-6 w-6 shrink-0",
+    base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden transition-transform duration-300 ease-in-out",
+    icon: "h-6 w-6 shrink-0 transition-transform duration-300 ease-in-out",
   },
 };
+
 
 export const carousel = {
   root: {

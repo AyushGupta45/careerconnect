@@ -5,17 +5,16 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import FooterCom from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
 import VerifyEmail from "./pages/Verify";
 import ToasterProvider from "./components/Toast";
-
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <ToasterProvider/>
+      <ToasterProvider />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Home />} />
@@ -24,14 +23,19 @@ const App = () => {
         <Route path="/seminar-opportunities" element={<Home />} />
         <Route path="/past-drives" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
         <Route element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/sign-up" element={<SignUp />} />
         </Route>
 
-        <Route path="/verify-email/:verificationToken" element={<VerifyEmail />} />
+        <Route
+          path="/verify-email/:verificationToken"
+          element={<VerifyEmail />}
+        />
       </Routes>
-      <Footer />
+      <div className="m-auto w-full sm:w-11/12 px-4">
+        <FooterCom />
+      </div>
     </BrowserRouter>
   );
 };
